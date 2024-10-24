@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-primaryDark;
+  }
+}
+
+@layer utilities {
+  .bg-image-light {
+    @apply bg-[url('/assets/blur-bg.png')];
+  }
+
+  .bg-image-gray {
+    @apply bg-image-light bg-gray-300;
+  }
+
+  .container {
+    @apply max-w-screen-xl mx-auto;
+  }
+
+  .container-lg {
+    @apply max-w-[1400px] mx-auto;
+  }
+
+  .container-wrapper {
+    @apply max-w-screen-2xl mx-auto;
+  }
+
+  .px-small {
+    @apply px-4;
+  }
+
+  .px-big {
+    @apply px-8;
+  }
+}
+
+.clip-sector {
+  clip-path: circle(100% at 100% 100%);
+}
