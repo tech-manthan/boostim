@@ -33,45 +33,43 @@
             class="flex items-center text-xs lg:text-sm font-medium gap-x-4 lg:gap-x-8"
           >
             <li>
-              <a href="#" class="space-x-1"
+              <a href="#" class="space-x-1 link-hover"
                 ><span>Service</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="space-x-1"
+              <a href="#" class="space-x-1 link-hover"
                 ><span>Agency</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="space-x-1"
+              <a href="#" class="space-x-1 link-hover"
                 ><span>Case Study</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="space-x-1"
+              <a href="#" class="space-x-1 link-hover"
                 ><span>Resources</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </a>
             </li>
             <li>
-              <a href="#"><span>Contact</span> </a>
+              <a href="#" class="link-hover"><span>Contact</span> </a>
             </li>
           </ul>
         </div>
 
         <div class="flex gap-x-4">
           <button
-            class="hidden xs:block font-secondary font-semibold py-2 px-5 rounded-full border border-primaryDark"
+            class="hidden xs:block font-secondary font-semibold button-normal"
           >
             Get Started
           </button>
 
-          <button
-            class="flex items-center bg-primaryDark text-white p-3 rounded-full"
-          >
+          <button class="button-icon">
             <i class="fa-regular fa-bell text-xl"></i>
           </button>
 
@@ -106,15 +104,11 @@
               <div
                 class="mt-4 flex flex-col xs:flex-row items-center gap-3 sm:gap-6"
               >
-                <button
-                  class="bg-primaryDark text-white px-6 py-3 rounded-full flex items-center gap-5"
-                >
+                <button class="button-dark">
                   <span class="text-sm font-medium">Schedule Call</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
-                <a href="#" class="border-b border-primaryDark pb-1">
-                  View Case Study
-                </a>
+                <a href="#" class="link-text"> View Case Study </a>
               </div>
             </div>
 
@@ -317,51 +311,31 @@
               <div
                 class="mt-6 lg:mt-12 flex items-center lg:justify-center gap-4 overflow-x-scroll scrollbar-hide sm:px-4"
               >
-                <button
-                  class="border border-white px-6 py-2 rounded-full whitespace-nowrap"
-                >
-                  All Work [20]
-                </button>
-                <button
-                  class="border border-green bg-green px-6 py-2 rounded-full whitespace-nowrap text-primaryDark"
-                >
-                  UI/UX Design[10]
-                </button>
-                <button
-                  class="border border-white px-6 py-2 rounded-full whitespace-nowrap"
-                >
-                  Digital Marketing [5]
-                </button>
-                <button
-                  class="border border-white px-6 py-2 rounded-full whitespace-nowrap"
-                >
-                  Branding [5]
-                </button>
+                <button class="button-white">All Work [20]</button>
+                <button class="button-green">UI/UX Design[10]</button>
+                <button class="button-white">Digital Marketing [5]</button>
+                <button class="button-white">Branding [5]</button>
               </div>
 
               <div
                 class="mt-6 lg:mt-12 flex gap-4 lg:gap-8 overflow-x-scroll scrollbar-hide lg:mx-6"
               >
-                <div
-                  class="flex flex-shrink-0 w-64 h-64 lg:w-[400px] lg:h-[400px] items-center relative"
-                >
+                <div class="feature-wrapper-card">
                   <img
                     src="./assets/example1.jpg"
-                    class="w-64 h-64 lg:w-[400px] lg:h-[400px] rounded-full border-[10px] border-primaryGray object-cover"
+                    class="feature-card-image rounded-full"
                     alt=""
                   />
                   <div
-                    class="absolute whitespace-nowrap bg-green px-5 py-12 text-sm font-bold text-primaryDark rounded-full left-1/2 -translate-x-1/2"
+                    class="absolute whitespace-nowrap bg-green px-5 py-12 text-sm font-bold text-white rounded-full left-1/2 -translate-x-1/2"
                   >
                     See Details
                   </div>
                 </div>
-                <div
-                  class="flex flex-shrink-0 w-64 h-64 lg:w-[400px] lg:h-[400px] items-center relative"
-                >
+                <div class="feature-wrapper-card">
                   <img
                     src="./assets/example2.jpg"
-                    class="w-64 h-64 lg:w-[400px] lg:h-[400px] rounded-3xl border-[10px] border-primaryGray object-cover"
+                    class="feature-card-image rounded-3xl"
                     alt=""
                   />
                   <div
@@ -380,12 +354,10 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="flex flex-shrink-0 w-64 h-64 lg:w-[400px] lg:h-[400px] items-center relative"
-                >
+                <div class="feature-wrapper-card">
                   <img
                     src="./assets/example3.jpg"
-                    class="w-64 h-64 lg:w-[400px] lg:h-[400px] rounded-3xl border-[10px] border-primaryGray object-cover"
+                    class="feature-card-image rounded-3xl"
                     alt=""
                   />
                   <div
@@ -440,9 +412,7 @@
                 </div>
               </div>
               <div class="flex items-center gap-6 justify-end">
-                <button
-                  class="border border-primaryDark px-6 py-2 rounded-full"
-                >
+                <button class="button-normal">
                   <i class="fa-solid fa-arrow-left"></i>
                 </button>
                 <div class="text-sm text-primaryGray">
@@ -450,9 +420,7 @@
                   <span>/</span>
                   <span>05</span>
                 </div>
-                <button
-                  class="border border-primaryDark bg-primaryDark text-white px-6 py-2 rounded-full"
-                >
+                <button class="button-dark">
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -478,12 +446,8 @@
                   frequently asked questions to help our clients.
                 </p>
                 <div class="flex flex-col items-center gap-4 xs:flex-row">
-                  <button
-                    class="px-6 py-2 border w-fit border-primaryDark rounded-full"
-                  >
-                    More Questions
-                  </button>
-                  <a href="#" class="underline">Contact Us</a>
+                  <button class="button-normal">More Questions</button>
+                  <a href="#" class="link-text">Contact Us</a>
                 </div>
               </div>
 
@@ -491,9 +455,7 @@
                 <div
                   class="flex flex-col gap-4 border-y border-primaryDark py-4"
                 >
-                  <div
-                    class="flex justify-between gap-3 items-center text-lg font-semibold"
-                  >
+                  <div class="question">
                     <h4>Why is digital marketing important for my business?</h4>
                     <span>-</span>
                   </div>
@@ -507,9 +469,7 @@
                   </p>
                 </div>
                 <div class="border-b border-primaryDark py-4">
-                  <div
-                    class="flex justify-between gap-3 items-center text-lg font-semibold"
-                  >
+                  <div class="question">
                     <h4>
                       How can digital marketing help improve my website's
                       visibility?
@@ -518,9 +478,7 @@
                   </div>
                 </div>
                 <div class="border-b border-primaryDark py-4">
-                  <div
-                    class="flex justify-between gap-3 items-center text-lg font-semibold"
-                  >
+                  <div class="question">
                     <h4>
                       How long does it take to see results from digital
                       marketing efforts?
@@ -529,9 +487,7 @@
                   </div>
                 </div>
                 <div class="border-b border-primaryDark py-4">
-                  <div
-                    class="flex justify-between gap-3 items-center text-lg font-semibold"
-                  >
+                  <div class="question">
                     <h4>
                       How do you measure the success of digital marketing
                       campaigns?
@@ -565,19 +521,13 @@
                   search engine rankings and drive more traffic to their
                   websites.
                 </p>
-                <button
-                  class="mt-6 px-6 py-2 border rounded-full border-primaryDark"
-                >
-                  See more
-                </button>
+                <button class="mt-6 button-normal">See more</button>
               </div>
             </div>
             <div
               class="mt-6 md:mt-16 flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-center items-center gap-6"
             >
-              <div
-                class="p-6 rounded-3xl flex flex-col gap-6 bg-white w-[320px] mx-auto sm:mx-0"
-              >
+              <div class="service-card">
                 <div class="flex justify-between items-center">
                   <div class="w-3 h-3 rounded-full bg-[#45A7DE]"></div>
                   <p class="text-xs text-primaryGray">5 min read</p>
@@ -590,16 +540,12 @@
                     We are the top digital marketing agency for branding corp.
                     We offer a full rang engine
                   </p>
-                  <button
-                    class="px-6 py-2 rounded-full bg-primaryDark text-white"
-                  >
+                  <button class="button-dark">
                     <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
               </div>
-              <div
-                class="p-6 rounded-3xl flex flex-col gap-6 bg-white w-[320px] mx-auto sm:mx-0"
-              >
+              <div class="service-card">
                 <div class="flex justify-between items-center">
                   <div class="w-3 h-3 rounded-full bg-[#EA5F38]"></div>
                   <p class="text-xs text-primaryGray">5 min read</p>
@@ -614,16 +560,12 @@
                     partnership. They have taken the time to understand our
                     business and industry
                   </p>
-                  <button
-                    class="px-6 py-2 rounded-full border border-primaryDark"
-                  >
+                  <button class="button-normal">
                     <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
               </div>
-              <div
-                class="p-6 rounded-3xl flex flex-col gap-6 bg-white w-[320px] mx-auto sm:mx-0"
-              >
+              <div class="service-card">
                 <div class="flex justify-between items-center">
                   <div class="w-3 h-3 rounded-full bg-[#6A26F1]"></div>
                   <p class="text-xs text-primaryGray">5 min read</p>
@@ -638,9 +580,7 @@
                     commitment to transparency and collaboration. They keep us
                     informed every step of the way,
                   </p>
-                  <button
-                    class="px-6 py-2 rounded-full border border-primaryDark"
-                  >
+                  <button class="button-normal">
                     <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
@@ -669,9 +609,7 @@
               >
                 Ready to work with us ?
               </h2>
-              <button
-                class="px-6 py-2 bg-white text-primaryDark flex items-center gap-3 rounded-full text-sm sm:text-base font-semibold"
-              >
+              <button class="button-white">
                 <span>Get Started</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -698,28 +636,16 @@
               the expertise and resources to handle our diverse marketing needs.
             </p>
             <div class="flex items-center gap-4">
-              <a
-                href="#"
-                class="bg-white w-10 h-10 rounded-full flex items-center justify-center"
-              >
+              <a href="#" class="brand">
                 <i class="fa-brands fa-facebook-f text-primaryDark"></i>
               </a>
-              <a
-                href="#"
-                class="bg-white w-10 h-10 rounded-full flex items-center justify-center"
-              >
+              <a href="#" class="brand">
                 <i class="fa-brands fa-linkedin-in text-primaryDark"></i>
               </a>
-              <a
-                href="#"
-                class="bg-white w-10 h-10 rounded-full flex items-center justify-center"
-              >
+              <a href="#" class="brand">
                 <i class="fa-brands fa-twitter text-primaryDark"></i>
               </a>
-              <a
-                href="#"
-                class="bg-white w-10 h-10 rounded-full flex items-center justify-center"
-              >
+              <a href="#" class="brand">
                 <i class="fa-brands fa-instagram text-primaryDark"></i>
               </a>
             </div>
@@ -730,19 +656,19 @@
               <h4 class="text-lg font-semibold">Navigation</h4>
               <ul class="space-y-4 text-primaryGray mt-6">
                 <li>
-                  <a href="#">Service</a>
+                  <a href="#" class="link-hover">Service</a>
                 </li>
                 <li>
-                  <a href="#">Agency</a>
+                  <a href="#" class="link-hover">Agency</a>
                 </li>
                 <li>
-                  <a href="#">Case Study</a>
+                  <a href="#" class="link-hover">Case Study</a>
                 </li>
                 <li>
-                  <a href="#">Resource</a>
+                  <a href="#" class="link-hover">Resource</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#" class="link-hover">Contact</a>
                 </li>
               </ul>
             </div>
@@ -750,13 +676,13 @@
               <h4 class="text-lg font-semibold">Licence</h4>
               <ul class="space-y-4 text-primaryGray mt-6">
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="#" class="link-hover">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#">Copyright</a>
+                  <a href="#" class="link-hover">Copyright</a>
                 </li>
                 <li>
-                  <a href="#">Email Address</a>
+                  <a href="#" class="link-hover">Email Address</a>
                 </li>
               </ul>
             </div>
@@ -764,20 +690,23 @@
               <h4 class="text-lg font-semibold">Contact</h4>
               <ul class="space-y-4 text-primaryGray mt-6">
                 <li>
-                  <a href="#">
+                  <a href="#" class="link-hover">
                     <i class="fa-solid fa-phone text-primaryDark mr-3"></i>
                     <span>(406) 555-0120</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="link-hover">
                     <i class="fa-solid fa-envelope text-primaryDark mr-3"></i>
                     <span>Hey@boostim.com</span>
                   </a>
                 </li>
                 <li>
-                  <i class="fa-solid fa-location-pin text-primaryDark mr-3"></i>
-                  <a href="#">
+                  <a href="#" class="link-hover">
+                    <i
+                      class="fa-solid fa-location-pin text-primaryDark mr-3"
+                    ></i>
+
                     <span>2972 Westheimer Rd. Santa Ana, Illinois 85486 </span>
                   </a>
                 </li>

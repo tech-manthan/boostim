@@ -40,6 +40,78 @@
   .px-big {
     @apply px-8;
   }
+
+  .link-hover {
+    @apply hover:text-green transition-colors duration-200;
+  }
+
+  .button-normal {
+    @apply py-2 px-6 rounded-full border border-primaryDark transition-colors duration-200;
+  }
+
+  .button-normal:hover {
+    @apply border-green text-green;
+  }
+
+  .button-dark {
+    @apply bg-primaryDark text-white px-6 py-3 rounded-full flex items-center gap-5 transition-colors duration-200;
+  }
+
+  .button-dark:hover {
+    @apply bg-green;
+  }
+
+  .button-icon {
+    @apply flex items-center bg-primaryDark text-white p-3 rounded-full transition-colors duration-200;
+  }
+
+  .button-icon:hover {
+    @apply bg-green;
+  }
+
+  .link-text {
+    @apply border-b border-primaryDark pb-1 transition-colors duration-200;
+  }
+
+  .link-text:hover {
+    @apply text-green border-green;
+  }
+
+  .button-white {
+    @apply py-2 px-6 rounded-full border transition-colors duration-200  border-white text-white whitespace-nowrap flex items-center gap-4;
+  }
+
+  .button-white:hover {
+    @apply border-green bg-green text-primaryDark;
+  }
+
+  .button-green {
+    @apply py-2 px-6 rounded-full border border-green bg-green text-primaryDark whitespace-nowrap;
+  }
+
+  .question {
+    @apply flex justify-between gap-3 items-center text-lg font-semibold;
+  }
+
+  .service-card {
+    @apply p-6 rounded-3xl flex flex-col gap-6 bg-white w-[320px] mx-auto sm:mx-0;
+  }
+
+  .brand {
+    @apply bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-200;
+  }
+
+  .brand:hover {
+    @apply bg-green;
+  }
+
+  .feature-wrapper-card {
+    @apply flex flex-shrink-0 w-64 h-64 lg:w-[400px] lg:h-[400px] items-center relative;
+  }
+
+  .feature-card-image {
+    @apply w-64 h-64 lg:w-[400px] lg:h-[400px]  border-[10px] border-primaryGray object-cover transition-colors duration-200;
+  }
 }
 
 .clip-sector {
