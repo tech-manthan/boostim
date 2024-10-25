@@ -18,7 +18,7 @@
   }
 
   .bg-image-gray {
-    @apply bg-image-light bg-gray-300;
+    @apply bg-image-light bg-gray-200;
   }
 
   .container {
@@ -44,4 +44,12 @@
 
 .clip-sector {
   clip-path: circle(100% at 100% 100%);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
